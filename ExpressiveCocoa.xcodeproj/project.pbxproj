@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43A6B8671BBC854300824E48 /* ATGlobals.h in Headers */ = {isa = PBXBuildFile; fileRef = 43A6B8651BBC854300824E48 /* ATGlobals.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43A6B8681BBC854300824E48 /* ATGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A6B8661BBC854300824E48 /* ATGlobals.m */; settings = {ASSET_TAGS = (); }; };
+		43A6B86E1BBC864A00824E48 /* ATChildTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 43A6B86C1BBC864A00824E48 /* ATChildTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43A6B86F1BBC864A00824E48 /* ATChildTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A6B86D1BBC864A00824E48 /* ATChildTask.m */; settings = {ASSET_TAGS = (); }; };
 		43D6A8FC1BB2A9B000296B03 /* ExpressiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43D6A8F11BB2A9B000296B03 /* ExpressiveCocoa.framework */; settings = {ASSET_TAGS = (); }; };
 		43D6A90E1BB2A9E300296B03 /* ExpressiveCocoaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D6A90D1BB2A9E300296B03 /* ExpressiveCocoaTests.swift */; settings = {ASSET_TAGS = (); }; };
 		43D6A9131BB2AA1C00296B03 /* ExpressiveCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 43D6A9121BB2AA1C00296B03 /* ExpressiveCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +27,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43A6B8651BBC854300824E48 /* ATGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGlobals.h; sourceTree = "<group>"; };
+		43A6B8661BBC854300824E48 /* ATGlobals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGlobals.m; sourceTree = "<group>"; };
+		43A6B86C1BBC864A00824E48 /* ATChildTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATChildTask.h; sourceTree = "<group>"; };
+		43A6B86D1BBC864A00824E48 /* ATChildTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATChildTask.m; sourceTree = "<group>"; };
 		43D6A8F11BB2A9B000296B03 /* ExpressiveCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ExpressiveCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43D6A8FB1BB2A9B000296B03 /* ExpressiveCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpressiveCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		43D6A90D1BB2A9E300296B03 /* ExpressiveCocoaTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpressiveCocoaTests.swift; sourceTree = "<group>"; };
@@ -73,6 +81,10 @@
 			isa = PBXGroup;
 			children = (
 				43D6A9121BB2AA1C00296B03 /* ExpressiveCocoa.h */,
+				43A6B8651BBC854300824E48 /* ATGlobals.h */,
+				43A6B8661BBC854300824E48 /* ATGlobals.m */,
+				43A6B86C1BBC864A00824E48 /* ATChildTask.h */,
+				43A6B86D1BBC864A00824E48 /* ATChildTask.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -101,6 +113,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43A6B86E1BBC864A00824E48 /* ATChildTask.h in Headers */,
+				43A6B8671BBC854300824E48 /* ATGlobals.h in Headers */,
 				43D6A9131BB2AA1C00296B03 /* ExpressiveCocoa.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +164,7 @@
 		43D6A8E81BB2A9B000296B03 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Andrey Tarantsov";
 				TargetAttributes = {
@@ -201,6 +216,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43A6B86F1BBC864A00824E48 /* ATChildTask.m in Sources */,
+				43A6B8681BBC854300824E48 /* ATGlobals.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +327,7 @@
 		43D6A9061BB2A9B000296B03 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -322,12 +340,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tarantsov.ExpressiveCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		43D6A9071BB2A9B000296B03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
