@@ -8,3 +8,4 @@ FOUNDATION_EXPORT const unsigned char ExpressiveCocoaVersionString[];
 
 #import <ExpressiveCocoa/ATGlobals.h>
 #import <ExpressiveCocoa/ATChildTask.h>
+#import <ExpressiveCocoa/NSAppleScript+ATInvokeHandlerWithArguments.h>
