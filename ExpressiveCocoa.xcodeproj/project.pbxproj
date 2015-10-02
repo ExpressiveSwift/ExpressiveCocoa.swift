@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		430019A31BBDEC8500ECF2AF /* NSAppleScript+ATInvokeHandlerWithArguments.h in Headers */ = {isa = PBXBuildFile; fileRef = 430019A11BBDEC8500ECF2AF /* NSAppleScript+ATInvokeHandlerWithArguments.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		430019A41BBDEC8500ECF2AF /* NSAppleScript+ATInvokeHandlerWithArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = 430019A21BBDEC8500ECF2AF /* NSAppleScript+ATInvokeHandlerWithArguments.m */; settings = {ASSET_TAGS = (); }; };
+		43001A731BBDF23700ECF2AF /* P2CommandLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 43001A711BBDF23700ECF2AF /* P2CommandLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43001A741BBDF23700ECF2AF /* P2CommandLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 43001A721BBDF23700ECF2AF /* P2CommandLine.m */; settings = {ASSET_TAGS = (); }; };
 		43A6B8671BBC854300824E48 /* ATGlobals.h in Headers */ = {isa = PBXBuildFile; fileRef = 43A6B8651BBC854300824E48 /* ATGlobals.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		43A6B8681BBC854300824E48 /* ATGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A6B8661BBC854300824E48 /* ATGlobals.m */; settings = {ASSET_TAGS = (); }; };
 		43A6B86E1BBC864A00824E48 /* ATChildTask.h in Headers */ = {isa = PBXBuildFile; fileRef = 43A6B86C1BBC864A00824E48 /* ATChildTask.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -31,6 +33,8 @@
 /* Begin PBXFileReference section */
 		430019A11BBDEC8500ECF2AF /* NSAppleScript+ATInvokeHandlerWithArguments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAppleScript+ATInvokeHandlerWithArguments.h"; sourceTree = "<group>"; };
 		430019A21BBDEC8500ECF2AF /* NSAppleScript+ATInvokeHandlerWithArguments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAppleScript+ATInvokeHandlerWithArguments.m"; sourceTree = "<group>"; };
+		43001A711BBDF23700ECF2AF /* P2CommandLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = P2CommandLine.h; sourceTree = "<group>"; };
+		43001A721BBDF23700ECF2AF /* P2CommandLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = P2CommandLine.m; sourceTree = "<group>"; };
 		43A6B8651BBC854300824E48 /* ATGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATGlobals.h; sourceTree = "<group>"; };
 		43A6B8661BBC854300824E48 /* ATGlobals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATGlobals.m; sourceTree = "<group>"; };
 		43A6B86C1BBC864A00824E48 /* ATChildTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATChildTask.h; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 				43A6B86D1BBC864A00824E48 /* ATChildTask.m */,
 				430019A11BBDEC8500ECF2AF /* NSAppleScript+ATInvokeHandlerWithArguments.h */,
 				430019A21BBDEC8500ECF2AF /* NSAppleScript+ATInvokeHandlerWithArguments.m */,
+				43001A711BBDF23700ECF2AF /* P2CommandLine.h */,
+				43001A721BBDF23700ECF2AF /* P2CommandLine.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -122,6 +128,7 @@
 				43A6B86E1BBC864A00824E48 /* ATChildTask.h in Headers */,
 				43A6B8671BBC854300824E48 /* ATGlobals.h in Headers */,
 				430019A31BBDEC8500ECF2AF /* NSAppleScript+ATInvokeHandlerWithArguments.h in Headers */,
+				43001A731BBDF23700ECF2AF /* P2CommandLine.h in Headers */,
 				43D6A9131BB2AA1C00296B03 /* ExpressiveCocoa.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,6 +233,7 @@
 				430019A41BBDEC8500ECF2AF /* NSAppleScript+ATInvokeHandlerWithArguments.m in Sources */,
 				43A6B86F1BBC864A00824E48 /* ATChildTask.m in Sources */,
 				43A6B8681BBC854300824E48 /* ATGlobals.m in Sources */,
+				43001A741BBDF23700ECF2AF /* P2CommandLine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
